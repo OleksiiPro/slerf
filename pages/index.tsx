@@ -6,7 +6,7 @@ import JokeBlock from "@components/JokeBlock";
 import { useEffect } from "react";
 import Provider, { useSubscribe } from 'streamr-client-react';
 
-import * as Ably from 'ably';
+//import * as Ably from 'ably';
 
 function Home() {
   useSubscribe('0x36e855b6358e977832bde8b762636fdfb1c962d1/slerf', {
@@ -19,7 +19,7 @@ function Home() {
   useEffect(() => {
     console.log("Oh hai! 🖤");
 
-    fetch('./api/streamr');
+    fetch('/api/streamr');
 
     // (async () => {
     //   const optionalClientId = "optionalClientId"; // When not provided in authUrl, a default will be used.

@@ -1,4 +1,3 @@
-import * as Ably from "ably";
 import { HandlerEvent, HandlerContext } from "@netlify/functions";
 import { StreamrClient } from '@streamr/sdk';
 
