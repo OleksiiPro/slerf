@@ -17,8 +17,8 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "paths": {
-      "@components/*": ["components/*"],
-      "@styles/*": ["styles/*"]
+      "@components/*": ["./components/*"],
+      "@styles/*": ["./styles/*"]
     }
   },
   "include": [
