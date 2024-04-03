@@ -20,7 +20,7 @@ export async function handler(event: HandlerEvent, context: HandlerContext) {
   };
 
   
-  const message = await streamr.publish('0x36e855b6358e977832bde8b762636fdfb1c962d1/slerf', messageData);
+  const message = await streamr.publish('0x36e855b6358e977832bde8b762636fdfb1c962d1/slerf', JSON.stringify(messageData));
 
   return {
     statusCode: 200,

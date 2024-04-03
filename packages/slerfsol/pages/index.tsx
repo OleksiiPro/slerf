@@ -12,14 +12,13 @@ function Home() {
   useSubscribe('0x36e855b6358e977832bde8b762636fdfb1c962d1/slerf', {
     onMessage(msg) {
       console.log('MESSAGE');
-      console.log(msg);
+      console.log(new TextDecoder().decode(msg.content));
+      console.log(Date.now());
     },
   });
 
   useEffect(() => {
     console.log("Oh hai! 🖤");
-
-    fetch('/api/streamr');
 
     // (async () => {
     //   const optionalClientId = "optionalClientId"; // When not provided in authUrl, a default will be used.

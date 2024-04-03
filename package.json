@@ -1,37 +1,9 @@
 {
-  "name": "nextjs-toolbox",
+  "name": "slerf",
   "version": "1.0.0",
-  "author": "Netlify Inc",
-  "contributors": [
-    "Tara Manicsic",
-    "Prince Wilson",
-    "Charlie Gerard",
-    "Ben Hong"
-  ],
-  "homepage": "https://github.com/netlify-templates/nextjs-toolbox",
-  "bugs": {
-    "url": "https://github.com/netlify-templates/nextjs-toolbox/issues"
-  },
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "export": "next export"
-  },
-  "dependencies": {
-    "@netlify/functions": "^2.6.0",
-    "@streamr/sdk": "100.1.0",
-    "ably": "^2.0.1",
-    "cypress": "^13.4.0",
-    "next": "^14.0.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-fast-compare": "^3.2.2",
-    "socket.io": "^4.7.5",
-    "streamr-client-react": "^3.2.0"
-  },
-  "devDependencies": {
-    "@types/react": "18.2.73",
-    "netlify-plugin-cypress": "2.2.1",
-    "typescript": "5.4.3"
-  }
+  "main": "index.js",
+  "repository": "git@github.com:OleksiiPro/slerf.git",
+  "license": "MIT",
+  "workspaces": ["packages/*"],
+  "private": true
 }
